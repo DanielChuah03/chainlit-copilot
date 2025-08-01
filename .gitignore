@@ -1,0 +1,16 @@
+# Environment files
+.env
+.env.*
+!.env.example  # Keep example template if needed
+
+# System files
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.venv/
+venv/
+
+# Chainlit specific
+.chainlit/
