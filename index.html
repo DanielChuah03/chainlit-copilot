@@ -7,10 +7,12 @@
 </head>
 <body>
     </script>
-<script src="http://localhost:8000/copilot/index.js"></script>
+<script src="/copilot/index.js"></script>
   <script>
-    window.mountChainlitWidget({
-      chainlitServer: "http://localhost:8000",
+    console.log('Location origin:', window.location.origin);
+    console.log('Full location:', window.location);
+    window.chainlitCopilot.mount({
+      server: window.location.origin,
     });
   </script>
 </body>
