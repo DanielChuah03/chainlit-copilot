@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-  </head>
-  <body>
-    <!-- ... -->
-    <script src="/copilot/index.js"></script>
-    <script>
-      window.mountChainlitWidget({
-        chainlitServer: "http://your-domain.com",  // Replace with your actual domain
-      });
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     </script>
-    <h1>Chainlit Copilot Demo</h1>
-  </body>
+<script src="http://localhost:8000/copilot/index.js"></script>
+  <script>
+    window.mountChainlitWidget({
+      chainlitServer: "http://localhost:8000",
+    });
+  </script>
+</body>
 </html>
