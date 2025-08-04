@@ -11,8 +11,10 @@
   <script>
     console.log('Location origin:', window.location.origin);
     console.log('Full location:', window.location);
+    const serverUrl = window.location.origin || (window.location.protocol + '//' + window.location.host);
+    console.log('Using server URL:', serverUrl);
     window.chainlitCopilot.mount({
-      server: window.location.origin,
+      server: serverUrl,
     });
   </script>
 </body>
